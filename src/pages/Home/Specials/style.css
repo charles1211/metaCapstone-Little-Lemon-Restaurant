@@ -1,0 +1,32 @@
+/* Specials Section */
+.Specials {
+  padding: 100px 12%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+#btn-menu:hover {
+  background-color: black;
+  color: white;
+}
+
+#btn-Buynow:hover {
+  background-color: black;
+  color: white;
+}
+
+.specials-titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Section-SpecialItems {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.25rem;
+  justify-content: space-between;
+}

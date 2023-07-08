@@ -1,0 +1,24 @@
+/* Testimonials */
+.Testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  padding: 4.5rem 2.25rem;
+  background-color: #f2e9e1;
+  justify-content: center;
+}
+
+.Testimonials-Carousel {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Testimonials-Carousel {
+    display: contents;
+    width: 100%;
+  }
+}

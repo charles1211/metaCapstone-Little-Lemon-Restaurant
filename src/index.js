@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import '../src/theme/index.css';
+import '../src/theme/App.css';
 import reportWebVitals from './reportWebVitals';
+import { ChakraProvider } from '@chakra-ui/react';
+import { RouterProvider } from 'react-router-dom';
+import theme from './theme/ThemeProvider';
+import router from './routes';
+import GlobalState from './context/GlobalState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ChakraProvider theme={theme}>
+      <GlobalState>
+        <RouterProvider router={router} />
+      </GlobalState>
+    </ChakraProvider>
   </React.StrictMode>
 );
 

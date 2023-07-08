@@ -1,0 +1,19 @@
+/* Reservation */
+.Reservation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  padding: 1.5rem 1.25rem;
+  background-color: #f2e9e1;
+  justify-content: center;
+  justify-items: center;
+}
+.reservation-details {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation-details {
+    width: 100%;
+  }
+}
